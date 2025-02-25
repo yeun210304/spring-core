@@ -13,6 +13,7 @@ public class MemberApp {
         // AppConfig appConfig = new AppConfig();
         // MemberService memberService = appConfig.memberService();
 
+        @SuppressWarnings("resource")
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = ac.getBean("memberService", MemberService.class);
         
