@@ -33,6 +33,7 @@ public class ConfigurationSingletonTest {
 
     @Test
     void ConfigurationDeep() {
+        @SuppressWarnings("resource")
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         
         AppConfig bean =  ac.getBean(AppConfig.class);
