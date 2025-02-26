@@ -13,6 +13,7 @@ public class AutowiredTest {
 
     @Test
     void autowiredOption() {
+        @SuppressWarnings({ "resource", "unused" })
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(TestBean.class);
     }
 
